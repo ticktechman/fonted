@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "fonted",
+  "version": "1.0",
+  "description": "点击插件图标，将所有元素的字体改为sans-serif",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "点击修改页面字体为sans-serif"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16":  "icons/icon16.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
