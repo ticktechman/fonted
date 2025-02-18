@@ -2,10 +2,10 @@
   "manifest_version": 3,
   "name": "fonted",
   "version": "1.0",
-  "description": "点击插件图标，将所有元素的字体改为sans-serif",
+  "description": "点击切换字体sans-serif",
   "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_title": "点击修改页面字体为sans-serif"
+    "default_title": "点击切换字体sans-serif"
   },
   "background": {
     "service_worker": "background.js"
