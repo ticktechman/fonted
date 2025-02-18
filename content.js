@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
     const styleEl = document.createElement('style');
     styleEl.textContent = `
       /* 对所有元素生效，但排除 <code> 元素 */
-      *:not(code) {
+      *:not(code):not(code *) {
         font-family: sans-serif !important;
       }
     `;
